@@ -1,0 +1,93 @@
+/*<header>
+  <img src="img/froggo.jpg">
+  <h1>FROGGO</h1>
+</header>*/
+html, body{
+  font-family: Arial;
+  margin: 0;
+}
+
+header{
+background-color: #4AE86B;
+padding-top: 80px;
+padding-bottom: 1px;
+text-align: center;
+}
+
+h1{
+  font-size: 90px;
+  color: white;
+}
+
+header img{
+  border-radius: 300px;
+  border: 20px solid; color: white;
+}
+
+.content{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: #4AE86B;
+}
+
+/*
+.wrapper{
+  background-color: #94FF44;
+}
+*/
+
+img.big-image{
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+.caption{
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+footer{
+  padding: 40px 40px;
+  background-color: #4AE86B;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li{
+  display: inline-block;
+  margin: 0 5px;
+  color: white;
+}
+
+footer ul{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+.characteristics{
+  padding-top: 50px;
+}
+
+ol{
+  padding-bottom: 50px;
+}
+
+.about{
+  padding-top: 10px;
+}

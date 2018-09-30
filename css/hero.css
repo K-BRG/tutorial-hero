@@ -3,9 +3,63 @@
   <h1>FROGGO</h1>
 </header>*/
 html, body{
-  font-family: Arial;
-  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+nav{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: green;
+
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+
 
 header{
 background-color: #4AE86B;
@@ -15,7 +69,8 @@ text-align: center;
 }
 
 h1{
-  font-size: 90px;
+  font-size: 80px;
+    font-weight: bold;
   color: white;
 }
 
@@ -25,7 +80,7 @@ header img{
 }
 
 .content{
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0px 20px;
   padding-bottom: 50px;
@@ -33,19 +88,27 @@ header img{
   color: #4AE86B;
 }
 
+
+.content li{
+    color: #4AE86B;
+    align-self: center;
+}
+
 /*
 .wrapper{
   background-color: #94FF44;
+     margin: 0px;
+    padding: 0px;
 }
 */
 
 img.big-image{
-     width: 800px;
+     width: 1000px;
   max-width: 100%;
   border-radius: 50px;
     padding: 0px 0px;
     margin-top: 50px;
-   
+
 }
 
 .caption{
@@ -88,10 +151,45 @@ p{
   padding-top: 50px;
 }
 
-ol{
-  padding-bottom: 50px;
-}
-
 .about{
   padding-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+      overflow-x: hidden;
+    }
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 94vh;
+      top: 6vh;
+      background-color: green;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 1.0s ease-in;
+    }
+
+    .nav-links li{
+      opacity: 0;
+    }
+
+    .burger{
+      display: block;
+    }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+    width: 40%;
+    }
 }

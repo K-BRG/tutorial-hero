@@ -63,20 +63,24 @@ nav{
 
 header{
 background-color: #4AE86B;
+padding: 0 20px;
 padding-top: 80px;
 padding-bottom: 1px;
 text-align: center;
+
 }
 
 h1{
-  font-size: 80px;
+  font-size: 70px;
     font-weight: bold;
   color: white;
 }
 
 header img{
+
   border-radius: 300px;
   border: 20px solid; color: white;
+
 }
 
 .content{
@@ -96,7 +100,7 @@ header img{
 
 /*
 .wrapper{
-  background-color: #94FF44;
+  background-color: white;
      margin: 0px;
     padding: 0px;
 }

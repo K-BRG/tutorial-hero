@@ -77,9 +77,14 @@ h1{
 }
 
 header img{
+  width: 85%;
+    height: 85%;
+  max-width: 500px;
+  max-width: 500px;
 
   border-radius: 300px;
   border: 20px solid; color: white;
+margin: 20px:
 
 }
 
